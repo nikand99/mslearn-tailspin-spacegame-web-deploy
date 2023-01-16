@@ -146,7 +146,7 @@ stages:
         wget -c archive.apache.org/dist/jmeter/source/apache-jmeter-5.5_src.tgz
         tar -xzf apache-jmeter-5.5_src.tgz
       displayName: 'Install Apache JMeter'
-    - script: apache-jmeter-5.5/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+    - script: apache-jmeter/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
       displayName: 'Run Load tests'
     - script: |
         sudo apt-get update
