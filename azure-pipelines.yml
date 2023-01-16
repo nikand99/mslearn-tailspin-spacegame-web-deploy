@@ -18,6 +18,7 @@ stages:
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
       dotnetSdkVersion: '6.x'
+      jmeterVersion: "5.5_src"
 
     steps:
     - task: UseDotNet@2
